@@ -12,32 +12,32 @@ import kotlin.math.floor
 
 object Luck: ICommand {
 
-    private val mascot = listOf("宫水三叶", "赈早见琥珀主", "末永未来", "凉宫春日", "", "")
+    private val mascot = listOf("宫水三叶", "赈早见琥珀主", "末永未来", "凉宫春日", "神里凌华", "山田凉")
 
     private val positive = mapOf(
         "Cosplay" to "会被集邮",
         "刷题" to "停不下来",
-        "" to "",
-        "" to "",
-        "" to "",
-        "" to "",
-        "" to "",
-        "" to "",
-        "" to "",
-        "" to "",
-        "" to "",
+        "请教问题" to "获得大佬的解答",
+        "开电脑" to "电脑的状态也很好",
+        "找对象" to "心仪的对象就在眼前",
+        "写程序" to "编译一次过, 运行无报错",
+        "水博客" to "文思泉涌",
+        "和大佬贴贴" to "大佬也喜欢你",
+        "做数学题" to "神童附体",
+        "向雪球乞讨" to "可以获得一块钱",
+        "收拾房间" to "干劲十足",
     )
 
     private val negative = mapOf(
         "抽卡" to "小保底会歪",
-        "" to "",
-        "" to "",
-        "" to "",
-        "" to "",
-        "" to "",
-        "" to "",
-        "" to "",
-        "" to "",
+        "写作文" to "不知所云, 离题千里",
+        "焊接电路板" to "电阻值漂飞, 电感在唱歌",
+        "修电脑" to "水冷漏液",
+        "和异性聊天" to "被嫌弃",
+        "补作业" to "补错科目",
+        "勾心斗角" to "被小人算计",
+        "涩涩" to "被骂hentai",
+        "装系统" to "启动引导BOOM",
     )
 
     override suspend fun execute(group: Group, sender: Member, args: List<String>) {
