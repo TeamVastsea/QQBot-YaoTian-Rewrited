@@ -1,7 +1,7 @@
 package cookedbunny.imbot.config
 
 data class GlobalConfig(
-    val password: String,
+    val groups: List<Long>,
     val adminList: List<Long>,
 
     val forumApiKey: String,
@@ -15,11 +15,11 @@ data class GlobalConfig(
 
 fun getDefaultConfig(): GlobalConfig {
     return GlobalConfig(
-        password = "",
+        groups = listOf(767819300),
         adminList = listOf(),
         forumApiKey = "",
         forumBaseUrl = "",
-        mongoUrl = "mongodb://root@127.0.0.1:27017/",
+        mongoUrl = "mongodb://127.0.0.1:27017/",
         mongoDatabaseName = "vastsea",
         rabbitHost = "127.0.0.1",
         rabbitPort = 5672,
