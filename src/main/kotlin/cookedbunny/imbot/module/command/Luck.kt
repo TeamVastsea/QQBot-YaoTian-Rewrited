@@ -71,8 +71,8 @@ object Luck: ICommand {
         val negativeComment = negative[negativeTitle]
 
         val mascotToday = mascot[(randomToday * mascot.size).toInt()]
-        val formattedMessage = "${greet}${sender.nick}，你今天的运势是\n⌈${word}⌋ （点数：${luckNum.toInt()}）\n\n" +
-                "宜：${positiveTitle}（${positiveComment}）\n忌：${negativeTitle}（${negativeComment}）\n今日的吉祥物是 $mascotToday"
+        val formattedMessage = "${greet}${sender.nick}, 你今天的运势是\n⌈${word}⌋  (点数：${luckNum.toInt()})\n\n" +
+                "宜：${positiveTitle} (${positiveComment})\n忌：${negativeTitle} (${negativeComment})\n今日的吉祥物是 $mascotToday"
         group.sendMessage(formattedMessage)
     }
 
