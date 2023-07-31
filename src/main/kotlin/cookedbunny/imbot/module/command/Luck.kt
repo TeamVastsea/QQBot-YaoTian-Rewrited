@@ -12,7 +12,7 @@ import kotlin.math.floor
 
 object Luck: ICommand {
 
-    private val mascot = listOf("宫水三叶", "赈早见琥珀主", "末永未来", "凉宫春日", "神里凌华", "山田凉")
+    private val mascot = listOf("宫水三叶", "赈早见琥珀主", "末永未来", "凉宫春日", "神里绫华", "山田凉")
 
     private val positive = mapOf(
         "Cosplay" to "会被集邮",
