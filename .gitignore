@@ -43,7 +43,6 @@ bin/
 
 debug-sandbox/
 .idea/.name
-.idea/.name
 .idea/kotlinc.xml
 .idea/misc.xml
 .idea/vcs.xml
